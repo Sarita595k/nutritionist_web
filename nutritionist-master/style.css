@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    outline: none;
+    font-family: "Playfair Display", serif;
+    /* background-color: #f2efe6; */
+    background: url("./Images/Background/header_background.jpg") no-repeat center center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+#hero-container {
+    position: relative;
+
+    z-index: 200;
+}
+
+
+#navigation-menu {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 300;
+}
+
+.image-logo {
+    margin: 0 5rem 0 2rem;
+}
+
+#menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+#menu-items-header {
+    display: flex;
+    list-style-type: none;
+}
+
+#menu-items-header a,
+.menu-icon a {
+    text-decoration: none;
+    color: white;
+}
+
+#menu-icons-header {
+    display: flex;
+    list-style-type: none;
+}
+
+.menu-item {
+    margin: 0 1.2rem;
+}
+
+.menu-icon {
+    margin: 0 1.2rem;
+}
+
+#image-container {
+    display: flex;
+    color: white;
+}
+
+#header-girl {
+    width: 40%;
+    height: 90%;
+    object-fit: cover;
+    margin-top: -6.3%;
+    padding: 0 7rem;
+}
+
+#hero-heading {
+    margin-top: 9%;
+}
+
+#hero-heading h1 {
+    width: 60%;
+}
+
+#main-heading {
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Playfair Display", serif;
+    font-size: 5.3rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#hero-heading p {
+    width: 80%;
+}
+
+#main-heading span {
+    text-transform: lowercase;
+}
+
+#hero-heading {
+    font-size: 2rem;
+}
+
+/* .signature {
+    margin-left: 50%;
+} */
+
+/* subhero section styling  */
+#sub-header-container {
+    position: absolute;
+    margin-top: -7rem;
+    z-index: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    width: 25%;
+    padding: 2.7rem;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: white;
+    color: #7E7B73;
+}
+
+.icons {
+    font-size: 3.7rem;
+    margin-right: 1.2rem;
+    color: #D8C149;
+    /* transform: scale(0.8); */
+}
+
+.heading {
+    margin: 0;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-transform: lowercase;
+}
+
+.subheader h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+.heading::first-letter {
+    text-transform: uppercase;
+}
+
+/* choose program section  */
+#choose-program {
+    padding-top: 15%;
+    background-color: #f2efe6;
+    color: #7E7B73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#choose-program-container,
+#choose-feedback-container {
+    text-align: center;
+    margin: 0 27%;
+}
+
+#program-heading h1,
+#feedback-heading h1 {
+    font-family: "Raleway", serif;
+    font-size: 3.4rem;
+    font-weight: 400;
+}
+
+#apple-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#apple-icon hr {
+    width: 14rem;
+    font-size: 1.3rem;
+    margin: 0 2rem;
+}
+
+#apple-icon i {
+    font-size: 3.7rem;
+    transition: all .9s ease-in;
+}
+
+#apple-icon i:hover {
+    color: #D8C149;
+}
+
+#program-subheading h5 {
+    margin: 1rem;
+    font-size: 1.7rem;
+    font-weight: 200;
+    color: #484743;
+}
+
+#program-cards-container {
+    margin: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    width: 20%;
+    background-color: white;
+    margin: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.cards i {
+    position: absolute;
+    font-size: 3.7rem;
+    padding: 1.2rem;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 12%;
+}
+
+.cards h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: lowercase;
+    margin: 2.8rem 0 0 0;
+}
+
+.cards h2::first-letter {
+    text-transform: uppercase;
+}
+
+.cards h6 {
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    color: #484743;
+    margin-top: 1rem;
+    padding: 0 1.3rem;
+    letter-spacing: 1px;
+}
+
+.cards button {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    background-color: #D8C149;
+    padding: 1rem 2.7rem;
+    margin-bottom: 3rem;
+    border: none;
+    border-radius: 15px;
+}
+
+.cards button:hover {
+    background-color: white;
+    border: 1px solid #D8C149;
+    color: #D8C149;
+}
