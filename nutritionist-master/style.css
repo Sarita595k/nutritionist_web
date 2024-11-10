@@ -11,15 +11,12 @@ body {
     overflow-x: hidden;
     outline: none;
     font-family: "Playfair Display", serif;
-    /* background-color: #f2efe6; */
-    background: url("./Images/Background/header_background.jpg") no-repeat center center;
-    background-size: cover;
-    /* background-attachment: fixed; */
 }
 
 #hero-container {
     position: relative;
-
+    background: url("./Images/Background/header_background.jpg") no-repeat center center;
+    background-size: cover;
     z-index: 200;
 }
 
@@ -88,11 +85,8 @@ body {
     margin-top: 9%;
 }
 
-#hero-heading h1 {
-    width: 60%;
-}
-
 #main-heading {
+    width: 65%;
     /* font-family: "Raleway", sans-serif; */
     font-family: "Playfair Display", serif;
     font-size: 5.3rem;
@@ -185,15 +179,23 @@ body {
     font-family: "Raleway", serif;
     font-size: 3.4rem;
     font-weight: 400;
+    text-transform: lowercase;
 }
 
-#apple-icon {
+#program-heading h1::first-letter,
+#feedback-heading h1::first-letter {
+    text-transform: uppercase;
+}
+
+#apple-icon,
+#message-icon-container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#apple-icon hr {
+#apple-icon hr,
+#message-icon-container hr {
     width: 14rem;
     font-size: 1.3rem;
     margin: 0 2rem;
@@ -246,6 +248,22 @@ body {
     margin-top: 12%;
 }
 
+.cards i:hover {
+    animation: hoverEffect 1s forwards;
+}
+
+@keyframes hoverEffect {
+    0% {
+        background-color: black;
+        color: white;
+    }
+
+    100% {
+        background-color: transparent;
+        border: 1px solid white;
+    }
+}
+
 .cards h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -276,6 +294,7 @@ body {
     margin-bottom: 3rem;
     border: none;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .cards button:hover {
@@ -284,6 +303,410 @@ body {
     color: #D8C149;
 }
 
-.hello_user {
+/* feedback section starts here */
+#feedback-container {
+    background-image: url("./Images/Background/girls-background-2.jpg");
+    opacity: .9;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#choose-feedback-container {
+    padding: 10% 0 1% 0;
+}
+
+.feedback-1 {
+    border-radius: 50%;
+}
+
+#feedback-subheader {
+    margin-top: 5rem;
+    padding: 5rem 0 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name p {
+    margin: 0;
+    font-size: 2.7rem;
+    text-transform: capitalize;
+}
+
+.position p {
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.feedback {
+    width: 75%;
+    text-align: center;
+}
+
+.feedback q {
+    margin: 0;
+    text-transform: lowercase;
+    font-size: 4.7rem;
+}
+
+.feedback::first-letter {
+    text-transform: uppercase;
+}
+
+#dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.slider-dot {
+    height: .8rem;
+    width: .8rem;
+    background-color: transparent;
+    margin: 1rem;
+    border-radius: 50%;
+    border: .2rem solid white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.fill {
     background-color: white;
+}
+
+.slider-dot:hover {
+    background-color: white;
+}
+
+/* #feedback-heading h1 {} */
+
+/* blog section starts here  */
+#blog-section-container {
+    padding: 10rem 0 3rem 0;
+    background-image: url("./Images/Background/blog-background.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#blog-heading h1,
+#form-heading h1 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+    text-transform: lowercase;
+    color: #484743;
+}
+
+#blog-heading h1::first-letter,
+#form-heading h1::first-letter {
+    text-transform: uppercase;
+}
+
+#blog-subheading h2,
+#form-subheading h2 {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #7E7B73;
+}
+
+#message-icon-container {
+    margin-top: 3.7rem;
+}
+
+#message-icon-container i {
+    color: #7E7B73;
+    font-size: 3.7rem;
+}
+
+#blog-container {
+    margin: 7% 3%;
+    display: flex;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5rem 2rem;
+}
+
+.blog-image {
+    height: 20rem;
+    width: 100%;
+}
+
+.dateTime {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.newspaper {
+    text-transform: capitalize;
+}
+
+.blog-title {
+    text-decoration: none;
+    color: #484743;
+    text-transform: lowercase;
+}
+
+.blog-title::first-letter {
+    text-transform: uppercase;
+}
+
+.blog-title a {
+    font-size: 1.7rem;
+    color: #484743;
+    text-decoration: none;
+}
+
+#blog-container p {
+    margin: .8rem 0 2rem 0;
+    font-size: 1.2rem;
+    font-family: "Raleway", serif;
+    color: #7E7B73;
+    line-height: 2rem;
+}
+
+.readMore {
+    width: 40%;
+    text-decoration: none;
+    text-align: left;
+    background-color: #D8C149;
+    border: none;
+    border-radius: 15px;
+    padding: .7rem;
+}
+
+.readMore {
+    font-size: 1rem;
+    padding-left: .7rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.readMore:hover {
+    background-color: transparent;
+    color: #D8C149;
+    border: .1rem solid #D8C149;
+}
+
+#form-container {
+    width: 90%;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    opacity: .7;
+}
+
+#emailAddress {
+    margin: 5rem 0 1rem 0;
+    padding: 1.2rem 20rem 1.2rem .9rem;
+    border: .1rem solid #7E7B73;
+    border-radius: 15px;
+}
+
+input::placeholder {
+    color: #7E7B73;
+}
+
+.subscribe-btn {
+    padding: 1rem 2rem 1rem 1rem;
+    color: white;
+    background-color: #D8C149;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.subscribe-btn:hover {
+    color: #D8C149;
+    background-color: transparent;
+    border: .1rem solid #D8C149;
+}
+
+/* dieting plan section begins here  */
+#dieting-plan-section {
+    background-color: #f2efe6;
+}
+
+#dieting-plan-container {
+    padding: 7% 0 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dieting-part1 h1 {
+    width: 50%;
+    margin: 0;
+    font-size: 4.3rem;
+    color: #7E7B73;
+    font-weight: 400;
+}
+
+#dieting-part1 span {
+    color: #D8C149;
+}
+
+#dieting-part1 p {
+    width: 53%;
+    font-size: 2rem;
+    color: #484743;
+}
+
+#dieting-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8.4%;
+}
+
+.dieting-sublist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-are {
+    width: 60%;
+    margin: 1rem 0 1rem;
+    display: flex;
+    align-items: start;
+}
+
+.part-2 {
+    margin-left: -6rem;
+}
+
+.list-icons {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3.3rem;
+    color: #D8C149;
+    margin-right: .7rem;
+}
+
+.before-icon::before {
+    content: "\f201";
+
+}
+
+.calculator::before {
+    content: '\f1ec';
+}
+
+.user::before {
+    content: '\f2bd'
+}
+
+.bullhorn::before {
+    content: '\f0a1';
+}
+
+.tag::before {
+    content: '\f02c';
+}
+
+.store::before {
+    content: '\f54e'
+}
+
+.list-heading {
+    /* width: 70%; */
+    padding: 0 1%;
+    margin: 0;
+}
+
+.list-heading h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #7E7B73;
+    font-weight: 200;
+    text-transform: lowercase;
+}
+
+.list-heading p {
+    width: 80%;
+    margin: .5rem 0 1rem;
+    font-size: 1.6rem;
+    color: #484743;
+}
+
+.list-heading::first-letter {
+    text-transform: uppercase;
+}
+
+#girls-image-container {
+    flex-basis: 40%;
+    margin-left: 10%;
+    transform: scale(1.6);
+}
+
+.dieting-girl-image {
+    height: 100%;
+    width: 100%;
+}
+
+/* pumpkin seed section starts here */
+#pumpkin-seed-container {
+    display: flex;
+    justify-content: center;
+    margin: 10% 2%;
+}
+
+.pumpkin-image {
+    margin-left: 10rem;
+}
+
+.content {
+    margin: 1rem;
+    margin-left: 7%;
+}
+
+.contentH1 {
+    width: 60%;
+    line-height: 1;
+}
+
+.content p {
+    color: #7E7B73;
+    font-size: 2rem;
+}
+
+.seeds {
+    color: #7E7B73;
+}
+
+.content h1 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 6rem;
+    font-weight: 200;
+    color: #D8C149;
+}
+
+.content h2 {
+    width: 87%;
+    color: #7E7B73;
+    font-size: 2.3rem;
+    font-weight: 200;
 }
