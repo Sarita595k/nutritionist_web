@@ -710,3 +710,171 @@ input::placeholder {
     font-size: 2.3rem;
     font-weight: 200;
 }
+
+/* footer section starts here */
+#footer-section {
+    background-color: #181A1E;
+}
+
+#footer-main-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-container {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 2rem;
+    padding: 7rem 5rem 5rem;
+    font-family: "Playfair Display", serif;
+}
+
+#footer-container>div {
+    flex: 1;
+}
+
+.recent-heading {
+    font-weight: 200;
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#gallery-hr {
+    display: flex;
+    flex-direction: column;
+}
+
+#gallery-hr hr,
+#health-hr hr,
+#recent-hr hr {
+    width: 15%;
+    margin-left: 0.5%;
+    border: .2rem solid #D8C149;
+}
+
+#gallery-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+}
+
+#gallery-container img {
+    flex: 1 1 30%;
+    max-width: 30%;
+    height: auto;
+}
+
+#health-hr {
+    margin-bottom: 3rem;
+}
+
+#health-tips h2 {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 200;
+}
+
+#health-hr hr {
+    width: 25%;
+}
+
+#tips-item-container {
+    height: 22rem;
+    overflow: hidden;
+}
+
+#tips-scroller {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(100%);
+    animation: scroller 30s linear infinite;
+}
+
+.tips-item {
+    margin: .2rem;
+    letter-spacing: .1rem;
+}
+
+.tips-item::before {
+    content: "\f179";
+    font-family: 'FontAwesome';
+    margin-right: .3rem;
+    color: #D8C149;
+}
+
+@keyframes scroller {
+    0% {
+        transform: translateY(100%);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+#recent-posts-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts {
+    display: flex;
+    padding: .5rem;
+}
+
+.posts a {
+    margin: 0;
+    padding: 0;
+}
+
+.recent-post-img {
+    height: 20%;
+    width: 20%;
+    padding: 1rem;
+}
+
+.topic-details h3 {
+    font-weight: 100;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.topic-details a {
+    text-decoration: none;
+}
+
+.topic-details a h2 {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+
+.topic-details a h2::first-letter {
+    text-transform: uppercase;
+}
+
+#footer-ruler {
+    width: 90%;
+    border: .2rem solid white;
+    margin-bottom: 2rem;
+}
+
+#bottom-heading {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-family: "Raleway", serif;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin: .1rem auto 3rem 6rem;
+}
