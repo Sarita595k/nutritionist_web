@@ -31,6 +31,74 @@ body {
     z-index: 300;
 }
 
+.menu-item {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    width: 20rem;
+    background-color: white;
+    padding: 1.3rem;
+    margin-top: 2rem;
+    margin-left: -17rem;
+    list-style-type: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .1s ease-in;
+}
+
+.submenu-item {
+    color: #D8C149;
+    text-align: right;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgb(204, 200, 200);
+    position: relative;
+}
+
+.submenu-item::before {
+    content: '';
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.submenu-item:hover::before {
+    animation: sparkle 2s linear infinite;
+}
+
+@keyframes sparkle {
+    0% {
+        left: 0%;
+        opacity: 0;
+    }
+
+    50% {
+        left: 100%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 0%;
+        opacity: 0;
+    }
+}
+
+/* .submenu-item:hover {
+    transform: scale(1.1);
+} */
+
+.menu-item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
 .image-logo {
     margin: 0 5rem 0 2rem;
 }
@@ -79,10 +147,26 @@ body {
     object-fit: cover;
     margin-top: -6.3%;
     padding: 0 7rem;
+    opacity: 0;
+    animation: header-girl-visiblility 1s linear 1s forwards;
+}
+
+@keyframes header-girl-visiblility {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #hero-heading {
     margin-top: 9%;
+    opacity: 0;
+    animation: text-visibility 2s linear 2s forwards;
 }
 
 #main-heading {
@@ -92,6 +176,18 @@ body {
     font-size: 5.3rem;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+@keyframes text-visibility {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 #hero-heading p {
@@ -111,6 +207,7 @@ body {
 } */
 
 /* subhero section styling  */
+
 #sub-header-container {
     position: absolute;
     margin-top: -7rem;
