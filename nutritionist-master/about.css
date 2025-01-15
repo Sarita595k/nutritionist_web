@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navigation-menu {
+    background: linear-gradient(197deg, rgba(28, 141, 142, 1) 16%, rgba(34, 196, 45, 0.9716678907891282) 100%);
+}
+
+#about-us-image-container {
+    height: 40vh;
+    width: 100%;
+    background-image: url(./Images/AboutUs/header/hero_inner_pages.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+#about-us-image-container::before {
+    content: '';
+    opacity: .6;
+    background-color: #181A1E;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#about-us-content {
+    width: 65%;
+    position: absolute;
+    top: 9rem;
+    z-index: 2;
+    margin: 5rem 7rem;
+}
+
+#about-us-content a {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #F0F0F0;
+    text-decoration: none;
+}
+
+#about-us-content h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #F0F0F0;
+    font-size: 3.5rem;
+    margin: 1.8rem 0 0 0;
+}
+
+#about-us-content p {
+    font-size: 1.8rem;
+    color: #FFFFFF;
+}
+
+/* section for coaching support and services  */
+#coaching-support {
+    display: flex;
+    background-image: url(./Images/AboutUs/background-image/background_12.jpg);
+    justify-content: center;
+    padding: 10% 5% 10% 10%;
+}
+
+#coaching-support-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+#coaching-heading {
+    width: 70%;
+    font-size: 5.2rem;
+    text-transform: capitalize;
+}
+
+.coaching,
+.support {
+    font-weight: 400;
+    color: #7E7B73;
+}
+
+.and {
+    color: #D8C149;
+}
+
+#content p {
+    color: #484743;
+    font-size: 2.3rem;
+    font-family: "Playfair Display", serif;
+}
+
+#coaching-btn {
+    margin-top: 10%;
+    display: flex;
+    gap: 7%;
+}
+
+.joinNow,
+.learnMore {
+    padding: 1.2rem 3.2rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.joinNow {
+    color: white;
+    background-color: #D8C149;
+    transition: all .7s ease-in-out;
+}
+
+.joinNow:hover {
+    background-color: white;
+    color: #D8C149;
+    border: 1px solid #D8C149;
+}
+
+.learnMore {
+    border: 1px solid #7E7B73;
+    color: #7E7B73;
+    transition: all .7s ease-in-out;
+}
+
+.learnMore:hover {
+    background-color: #7E7B73;
+    color: white;
+}
