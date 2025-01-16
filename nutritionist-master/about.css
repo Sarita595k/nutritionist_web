@@ -56,9 +56,15 @@ body {
 }
 
 /* section for coaching support and services  */
+#coaching-support-section {
+    background-image: url(./Images/AboutUs/background-image/background_12.jpg);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+}
+
 #coaching-support {
     display: flex;
-    background-image: url(./Images/AboutUs/background-image/background_12.jpg);
     justify-content: center;
     padding: 10% 5% 10% 10%;
 }
@@ -127,4 +133,80 @@ body {
 .learnMore:hover {
     background-color: #7E7B73;
     color: white;
+}
+
+/* growing community section  */
+#growing-community-section {
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 0% 10%;
+}
+
+#growing-community {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0;
+}
+
+.growing {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.growing::first-letter {
+    text-transform: uppercase;
+}
+
+.growing h3 {
+    font-style: italic;
+    font-size: 2rem;
+    color: #484743;
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+}
+
+.growingHeading {
+    font-family: "Raleway", sans-serif;
+    color: #7E7B73;
+    font-size: 3.1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.growingHeading::first-letter {
+    text-transform: uppercase;
+}
+
+.growing-icons {
+    width: 40%;
+    display: inline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.growing-icons span::before {
+    content: '\f5d1';
+    font-family: "fontAwesome";
+    font-size: 3.5rem;
+    color: #7E7B73;
+}
+
+.growing-icons hr {
+    width: 7.5rem;
+}
+
+.growing-icons i {
+    font-size: 3rem;
+    padding: 0;
+}
+
+.growing-icons hr {
+    width: 5rem;
+    color: #484743;
+}
+
+#healthyLifePrinciple {
+    display: flex;
 }
