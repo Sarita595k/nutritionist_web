@@ -60,7 +60,7 @@ body {
     background-image: url(./Images/AboutUs/background-image/background_12.jpg);
     display: flex;
     flex-direction: column;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
 #coaching-support {
@@ -138,7 +138,7 @@ body {
 /* growing community section  */
 #growing-community-section {
     background-color: rgba(255, 255, 255, 0.7);
-    margin: 0% 10%;
+    margin: 0% 6%;
 }
 
 #growing-community {
@@ -179,8 +179,6 @@ body {
 }
 
 .growing-icons {
-    width: 40%;
-    display: inline;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -195,6 +193,8 @@ body {
 
 .growing-icons hr {
     width: 7.5rem;
+    color: #484743;
+    margin: 1rem;
 }
 
 .growing-icons i {
@@ -202,11 +202,127 @@ body {
     padding: 0;
 }
 
-.growing-icons hr {
-    width: 5rem;
+.growing h2 {
+    font-family: "Playfair Display", serif;
+    text-transform: lowercase;
     color: #484743;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.growing h2::first-letter {
+    text-transform: uppercase;
 }
 
 #healthyLifePrinciple {
     display: flex;
+    gap: 3.7%;
+}
+
+#healthyLifePrinciple {
+    margin-top: 10%;
+    padding: 0 5%;
+    font-family: "Playfair Display", serif;
+}
+
+#healthyLife i,
+#principles i,
+#farmingPractices i,
+#personalizedPlan i {
+    font-size: 8rem;
+    color: #D8C149;
+}
+
+.healthyLifeHeading {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: #7E7B73;
+    text-transform: capitalize;
+    margin: 2rem auto 1rem auto;
+}
+
+.healthyLifeSubHeading {
+    color: #484743;
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+    text-transform: lowercase;
+}
+
+.healthyLifeSubHeading::first-letter {
+    text-transform: uppercase;
+}
+
+/* dieting package section styles begins here  */
+#dieting-package-section {
+    background-image: url(./Images/AboutUs/background-image/background_lady.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#dieting-package-container {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+#dieting-package-headings h1 {
+    width: 67%;
+    color: #F0F0F0;
+    font-size: 4.3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+#dieting-package-headings span {
+    color: #D8C149;
+}
+
+#dieting-package-headings h2 {
+    width: 68%;
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#dieting-packages {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 5% 0;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #F0F0f0;
+    padding: 5% 2%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: .1rem solid #F0F0F0;
+}
+
+.packages i {
+    font-size: 6.1rem;
+}
+
+.packages h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-transform: lowercase;
+}
+
+.packages h2::first-letter {
+    text-transform: uppercase;
+}
+
+.packages h5 {
+    margin: 0 0 2rem 0;
+    font-size: 1.7rem;
+    font-weight: 300;
 }
