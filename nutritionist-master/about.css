@@ -254,13 +254,11 @@ body {
 }
 
 /* dieting package section styles begins here  */
-#dieting-package-section {
-    background-image: url(./Images/AboutUs/background-image/background_lady.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 #dieting-package-container {
+    background-image: url(./Images/AboutUs/background-image/background_lady.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     padding: 5%;
     display: flex;
     flex-direction: column;
@@ -292,7 +290,7 @@ body {
     display: flex;
     justify-content: center;
     align-self: center;
-    padding: 5% 0;
+    /* padding: 5% 0; */
 }
 
 .packages {
@@ -302,7 +300,7 @@ body {
     align-items: center;
     text-align: center;
     color: #F0F0f0;
-    padding: 5% 2%;
+    padding: 3% 2%;
     background-color: rgba(255, 255, 255, 0.1);
     border: .1rem solid #F0F0F0;
 }
@@ -325,4 +323,138 @@ body {
     margin: 0 0 2rem 0;
     font-size: 1.7rem;
     font-weight: 300;
+}
+
+.package-btn {
+    background-color: #D8C149;
+    color: #F0F0F0;
+    font-family: "Playfair Display", serif;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.package-btn::after {
+    content: '\f061';
+    font-family: 'fontAwesome';
+    padding-left: 2rem;
+}
+
+/* team section styles begins here  */
+#team-container {
+    background-image: url(./Images/AboutUs/background-image/background_team.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -2%;
+    padding: 10% 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#team-heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#team-heading-container h5 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
+    color: #484743;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1rem;
+}
+
+#team-heading-container h1 {
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    color: #7E7B73;
+    font-size: 5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 2rem;
+}
+
+#team-heading-container hr {
+    width: 7.5rem;
+    border: 1px solid #D8C149;
+}
+
+#team-heading-container h2 {
+    color: #484743;
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 300;
+    text-transform: lowercase;
+}
+
+#team-heading-container h2::first-letter {
+    text-transform: uppercase;
+}
+
+#team-cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6.7rem 3rem 0;
+}
+
+.team-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-image {
+    border-radius: 50%;
+}
+
+.team-card h3 {
+    margin-top: 2rem;
+    color: #484743;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.team-card h2 {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+    color: #7E7B73;
+}
+
+.team-card p {
+    font-size: 1.3rem;
+    color: #484743;
+}
+
+.team-social i {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: .6rem;
+    margin: .8rem;
+    background-color: #484743;
+    transition: all .7s ease-in-out;
+}
+
+.team-social a i {
+    color: #F0F0f0;
+}
+
+.team-social i:hover {
+    background-color: white;
+    color: #484743;
 }
