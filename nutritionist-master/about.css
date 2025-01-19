@@ -396,6 +396,8 @@ body {
     text-transform: uppercase;
 }
 
+/* cards are added*/
+
 #team-cards-container {
     display: flex;
     align-items: center;
