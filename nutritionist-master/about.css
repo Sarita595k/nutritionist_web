@@ -341,7 +341,8 @@ body {
 }
 
 /* team section styles begins here  */
-#team-container {
+#team-container,
+#dedicated-team-container {
     background-image: url(./Images/AboutUs/background-image/background_team.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -353,14 +354,19 @@ body {
     justify-content: center;
 }
 
-#team-heading-container {
+#team-heading-container,
+#meet-us-headings,
+#dedicated-teams-headings {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-#team-heading-container h5 {
+#team-heading-container h5,
+#meet-us-headings h5,
+#dedicated-teams-headings h5 {
     font-family: "Raleway", sans-serif;
     font-size: 2rem;
     color: #484743;
@@ -369,7 +375,9 @@ body {
     margin: 1rem;
 }
 
-#team-heading-container h1 {
+#team-heading-container h1,
+#meet-us-headings h1,
+#dedicated-teams-headings h1 {
     margin: 0;
     font-family: "Playfair Display", serif;
     color: #7E7B73;
@@ -379,12 +387,16 @@ body {
     margin: 2rem;
 }
 
-#team-heading-container hr {
+#team-heading-container hr,
+#meet-us-headings hr,
+#dedicated-teams-headings hr {
     width: 7.5rem;
     border: 1px solid #D8C149;
 }
 
-#team-heading-container h2 {
+#team-heading-container h2,
+#meet-us-headings h2,
+#dedicated-teams-headings h2 {
     color: #484743;
     font-size: 2rem;
     font-family: "Playfair Display", serif;
@@ -392,7 +404,9 @@ body {
     text-transform: lowercase;
 }
 
-#team-heading-container h2::first-letter {
+#team-heading-container h2::first-letter,
+#meet-us-headings h2::first-letter,
+#dedicated-teams-headings h2::first-letter {
     text-transform: uppercase;
 }
 
@@ -459,4 +473,56 @@ body {
 .team-social i:hover {
     background-color: white;
     color: #484743;
+}
+
+/* meet us style begins here*/
+#meet-us-section {
+    background-image: url(./Images/AboutUs/background-image/organic-food-background.jpg);
+}
+
+#meet-us-container {
+    padding: 10% 10% 5% 10%;
+}
+
+#meet-us-headings h1,
+#meet-us-headings h2 {
+    color: #F0F0F0;
+}
+
+#meet-us-headings h5 {
+    color: #FFFFFF;
+}
+
+#meet-us-grids {
+    padding: 7% 0 3% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.meet-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7%;
+    border-left: .1rem solid #7E7B73;
+}
+
+.meet-col:first-child {
+    border: none;
+}
+
+.meet-col h1 {
+    font-size: 5rem;
+    color: #F0F0F0;
+    font-weight: 300;
+    margin: 0;
+}
+
+.meet-col p {
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
