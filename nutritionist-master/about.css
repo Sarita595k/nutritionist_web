@@ -149,7 +149,8 @@ body {
     padding: 2% 0;
 }
 
-.growing {
+.growing,
+#coaching-headings {
     text-align: center;
     text-transform: lowercase;
 }
@@ -158,15 +159,23 @@ body {
     text-transform: uppercase;
 }
 
-.growing h3 {
+.growing h3,
+#coaching-headings h3 {
     font-style: italic;
     font-size: 2rem;
     color: #484743;
     font-weight: 300;
     font-family: "Playfair Display", serif;
+    text-transform: lowercase;
 }
 
-.growingHeading {
+.growing h3::first-letter,
+#coaching-headings h3::first-letter {
+    text-transform: uppercase;
+}
+
+.growingHeading,
+.coaching-heading {
     font-family: "Raleway", sans-serif;
     color: #7E7B73;
     font-size: 3.1rem;
@@ -178,31 +187,36 @@ body {
     text-transform: uppercase;
 }
 
-.growing-icons {
+.growing-icons,
+.coaching-icons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.growing-icons span::before {
+.growing-icons span::before,
+.coaching-icons span::before {
     content: '\f5d1';
     font-family: "fontAwesome";
     font-size: 3.5rem;
     color: #7E7B73;
 }
 
-.growing-icons hr {
+.growing-icons hr,
+.coaching-icons hr {
     width: 7.5rem;
     color: #484743;
     margin: 1rem;
 }
 
-.growing-icons i {
+.growing-icons i,
+.coaching-icons i {
     font-size: 3rem;
     padding: 0;
 }
 
-.growing h2 {
+.growing h2,
+#coaching-headings h2 {
     font-family: "Playfair Display", serif;
     text-transform: lowercase;
     color: #484743;
@@ -210,7 +224,8 @@ body {
     font-weight: 300;
 }
 
-.growing h2::first-letter {
+.growing h2::first-letter,
+#coaching-headings h2::first-letter {
     text-transform: uppercase;
 }
 
@@ -525,4 +540,86 @@ body {
     font-size: 1rem;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+/* dedicated team styles begin here  */
+#dedicated-team-container {
+    padding: 10% 0 0%;
+}
+
+#dedicated-team-cards-container {
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dedicated-team-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dedicated-team-card h2 {
+    color: #484743;
+    font-size: 1.1rem;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.dedicated-team-card h1 {
+    font-family: "Playfair Display", serif;
+    color: #7E7B73;
+    font-weight: 300;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.dedicated-social-icon {
+    margin-bottom: 12%;
+}
+
+.dedicated-social-icon i {
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: .6rem;
+    margin: .8rem;
+    background-color: #484743;
+    transition: all .7s ease-in-out;
+}
+
+.dedicated-social-icon a i {
+    color: #F0F0f0;
+}
+
+.dedicated-social-icon i:hover {
+    background-color: white;
+    color: #484743;
+}
+
+.dedicated-team-image {
+    height: 50%;
+    width: 50%;
+}
+
+/* process and coaching section begins here */
+#process-coaching-conatiner {
+    margin: 10%;
+}
+
+.coaching-heading {
+    text-transform: capitalize;
+}
+
+#coaching-cards {
+    display: flex;
+    gap: 10%;
+}
+
+.coaching-card-image {
+    height: 70%;
+    width: 30vh;
 }
