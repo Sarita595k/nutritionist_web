@@ -343,10 +343,17 @@ body {
 .package-btn {
     background-color: #D8C149;
     color: #F0F0F0;
-    font-family: "Playfair Display", serif;
     border: none;
     padding: 1rem 2rem;
     border-radius: 2rem;
+}
+
+.package-btn a {
+    color: #F0F0F0;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
 }
 
 .package-btn::after {
@@ -607,7 +614,7 @@ body {
 
 /* process and coaching section begins here */
 #process-coaching-conatiner {
-    margin: 10%;
+    margin: 10% 0;
 }
 
 .coaching-heading {
@@ -616,10 +623,35 @@ body {
 
 #coaching-cards {
     display: flex;
-    gap: 10%;
+    padding: 7% 3%;
+    gap: 3.7%;
 }
 
 .coaching-card-image {
-    height: 70%;
-    width: 30vh;
+    height: 60%;
+    width: 100%;
+}
+
+.coaching-card h3 {
+    font-size: 1.7rem;
+    color: #181A1E;
+    font-weight: 300;
+    margin: 1rem;
+}
+
+.coaching-card h3 span {
+    text-transform: capitalize;
+}
+
+.coaching-card h1 {
+    text-transform: capitalize;
+    color: #7E7B73;
+    font-weight: 300;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.coaching-card p {
+    font-size: 1.5rem;
+    color: #484743;
 }
