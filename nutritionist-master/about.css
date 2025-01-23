@@ -150,7 +150,8 @@ body {
 }
 
 .growing,
-#coaching-headings {
+#coaching-headings,
+#mission-headings {
     text-align: center;
     text-transform: lowercase;
 }
@@ -160,7 +161,8 @@ body {
 }
 
 .growing h3,
-#coaching-headings h3 {
+#coaching-headings h3,
+#mission-headings h3 {
     font-style: italic;
     font-size: 2rem;
     color: #484743;
@@ -170,12 +172,14 @@ body {
 }
 
 .growing h3::first-letter,
-#coaching-headings h3::first-letter {
+#coaching-headings h3::first-letter,
+#mission-headings h3::first-letter {
     text-transform: uppercase;
 }
 
 .growingHeading,
-.coaching-heading {
+.coaching-heading,
+.mission-heading {
     font-family: "Raleway", sans-serif;
     color: #7E7B73;
     font-size: 3.1rem;
@@ -188,14 +192,16 @@ body {
 }
 
 .growing-icons,
-.coaching-icons {
+.coaching-icons,
+.mission-icons {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .growing-icons span::before,
-.coaching-icons span::before {
+.coaching-icons span::before,
+.mission-icons span::before {
     content: '\f5d1';
     font-family: "fontAwesome";
     font-size: 3.5rem;
@@ -203,20 +209,23 @@ body {
 }
 
 .growing-icons hr,
-.coaching-icons hr {
+.coaching-icons hr,
+.mission-icons hr {
     width: 7.5rem;
     color: #484743;
     margin: 1rem;
 }
 
 .growing-icons i,
-.coaching-icons i {
+.coaching-icons i,
+.mission-icons i {
     font-size: 3rem;
     padding: 0;
 }
 
 .growing h2,
-#coaching-headings h2 {
+#coaching-headings h2,
+#mission-headings h2 {
     font-family: "Playfair Display", serif;
     text-transform: lowercase;
     color: #484743;
@@ -225,7 +234,8 @@ body {
 }
 
 .growing h2::first-letter,
-#coaching-headings h2::first-letter {
+#coaching-headings h2::first-letter,
+#mission-headings h2::first-letter {
     text-transform: uppercase;
 }
 
@@ -613,37 +623,44 @@ body {
 }
 
 /* process and coaching section begins here */
-#process-coaching-conatiner {
+#process-coaching-conatiner,
+#mission-diet-container {
     margin: 10% 0;
 }
 
-.coaching-heading {
+.coaching-heading,
+.mission-heading {
     text-transform: capitalize;
 }
 
-#coaching-cards {
+#coaching-cards,
+#mission-cards {
     display: flex;
     padding: 7% 3%;
     gap: 3.7%;
 }
 
-.coaching-card-image {
+.coaching-card-image,
+.mission-card-image {
     height: 60%;
     width: 100%;
 }
 
-.coaching-card h3 {
+.coaching-card h3,
+.mission-card h3 {
     font-size: 1.7rem;
     color: #181A1E;
     font-weight: 300;
     margin: 1rem;
 }
 
-.coaching-card h3 span {
+.coaching-card h3 span,
+.mission-card h3 span {
     text-transform: capitalize;
 }
 
-.coaching-card h1 {
+.coaching-card h1,
+.mission-card h1 {
     text-transform: capitalize;
     color: #7E7B73;
     font-weight: 300;
@@ -651,7 +668,8 @@ body {
     margin: 0;
 }
 
-.coaching-card p {
+.coaching-card p,
+.mission-card p {
     font-size: 1.5rem;
     color: #484743;
 }
