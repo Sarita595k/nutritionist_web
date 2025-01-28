@@ -1,0 +1,44 @@
+/* section for expertize and services */
+#expertize-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 7%;
+}
+
+#expertize-section {
+    padding: 10% 0;
+}
+
+#expertize-section h2 {
+    color: #484743;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin: 0;
+}
+
+#expertize-section h1 {
+    font-family: "Playfair Display", serif;
+    color: #7E7B73;
+    font-weight: 400;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin: 3% 0;
+}
+
+#expertize-section h3 {
+    color: #484743;
+    font-family: "Playfair Display", serif;
+    font-size: 2.3rem;
+    margin: 0 8%;
+    text-transform: lowercase;
+    font-weight: 100;
+}
+
+#expertize-section h3::first-letter {
+    text-transform: uppercase;
+}

@@ -115,3 +115,16 @@
     background-color: white;
     color: #484743;
 }
+
+#moreContent {
+    text-align: center;
+}
+
+#moreContent h2 {
+    margin: 0;
+    text-transform: capitalize;
+    color: #7E7B73;
+    font-size: 1.7rem;
+    font-weight: 300;
+    font-family: "Playfair Display", serif;
+}
