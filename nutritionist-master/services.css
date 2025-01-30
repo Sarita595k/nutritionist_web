@@ -5,11 +5,11 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 7%;
+    padding: 3% 2%;
 }
 
 #expertize-section {
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 #expertize-section h2 {
@@ -42,4 +42,69 @@
 #expertize-section h3::first-letter {
     text-transform: uppercase;
 }
+
+#expertize-columns-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.expertize {
+    width: calc(32% - 2%);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertize i {
+    font-size: 5.9rem;
+    color: #D8C149;
+}
+
+.expertHeading {
+    color: #7E7B73;
+    font-family: "Playfair Display", serif;
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 2rem 0 0;
+}
+
+.expertParagraph {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    color: #484743;
+    font-weight: 200;
+}
+
 /* section for services starts here  */
+#experience-section-container {
+    background-image: url('./Images/servicePage/background_8.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+#experience-section-container::before {
+    content: '';
+    background-image: url('./Images/servicePage/diagonalstripe-black.png');
+    position: absolute;
+}
+
+#experience-section-container {
+    display: flex;
+    color: white;
+}
+
+#experienceDetails {
+    display: flex;
+}
+
+.experienceHeading h1 {
+    font-size: 3.7rem;
+    text-transform: capitalize;
+}

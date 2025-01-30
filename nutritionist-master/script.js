@@ -74,44 +74,107 @@ const socialMediaDetails = [
     { href: '#', class: 'fa-brands fa-twitter' },
     { href: '#', class: 'fa-brands fa-linkedin-in' },
 ]
-let projectGrids = document.getElementById('project-grids')
 
-let projectGridAre = projectArray.forEach(project => {
-    let projectGridDetails = document.createElement('div')
-    projectGridDetails.classList.add('project-grid')
+document.addEventListener("DOMContentLoaded", function () {
+    let projectGrids = document.getElementById('project-grids');
+    if (!projectGrids) {
+        console.error("Error: #project-grids not found in the DOM.");
+        return;
+    }
+    // let projectGrids = document.getElementById('project-grids')
 
-    let projectImage = document.createElement('img')
-    projectImage.classList.add('project-grid-image')
-    projectImage.src = project.imageSrc
+    let projectGridAre = projectArray.forEach(project => {
+        let projectGridDetails = document.createElement('div')
+        projectGridDetails.classList.add('project-grid')
 
-    let projectHeading = document.createElement('h1')
-    let headinglink = document.createElement('a')
-    headinglink.href = project.projectLink
-    headinglink.textContent = project.projectHeading
-    projectHeading.append(headinglink)
+        let projectImage = document.createElement('img')
+        projectImage.classList.add('project-grid-image')
+        projectImage.src = project.imageSrc
 
-    let projectParagraph = document.createElement('p')
-    projectParagraph.classList.add('project-paragraph')
-    projectParagraph.textContent = project.projectParagraph
-    console.log(project)
+        let projectHeading = document.createElement('h1')
+        let headinglink = document.createElement('a')
+        headinglink.href = project.projectLink
+        headinglink.textContent = project.projectHeading
+        projectHeading.append(headinglink)
 
-    let socialIconClass = document.createElement('div')
-    socialIconClass.classList.add('project-social-icons')
+        let projectParagraph = document.createElement('p')
+        projectParagraph.classList.add('project-paragraph')
+        projectParagraph.textContent = project.projectParagraph
 
-    const socialMedia = socialMediaDetails.forEach(socialMedia => {
-        let socialLink = document.createElement('a')
-        socialLink.href = socialMedia.href
-        let socialIcon = document.createElement('i')
-        socialIcon.className = socialMedia.class
-        console.log(socialMedia)
+        let socialIconClass = document.createElement('div')
+        socialIconClass.classList.add('project-social-icons')
 
-        socialLink.append(socialIcon)
-        socialIconClass.append(socialLink)
+        const socialMedia = socialMediaDetails.forEach(socialMedia => {
+            let socialLink = document.createElement('a')
+            socialLink.href = socialMedia.href
+            let socialIcon = document.createElement('i')
+            socialIcon.className = socialMedia.class
+
+            socialLink.append(socialIcon)
+            socialIconClass.append(socialLink)
+        })
+
+        projectGridDetails.append(projectImage, projectHeading, projectParagraph, socialIconClass)
+        projectGrids.append(projectGridDetails)
     })
-
-    projectGridDetails.append(projectImage, projectHeading, projectParagraph, socialIconClass)
-    projectGrids.append(projectGridDetails)
 })
 
 // project page script ends here 
 
+let expertizeList = [{
+    class: "fa-solid fa-chart-pie",
+    heading: 'vision of plan',
+    paragraph: 'Completely synergize resource taxing relationships via premier niche markets. Visualize customer directed convergence without ROI.'
+},
+{
+    class: "fa-solid fa-shop",
+    heading: 'plan to coaching',
+    paragraph: 'Podcasting operational change management inside of workflows to establish a framework. Taking key indicators offline to maximise the tail.'
+},
+{
+    class: 'fa-brands fa-codiepie',
+    heading: 'coaching to health',
+    paragraph: 'Credibly innovate granular internal or “organic“ sources whereas high standards in web-readiness. Energistically scale core competencies.'
+}, {
+    class: 'fa-solid fa-signal',
+    heading: 'heath to happiness',
+    paragraph: 'Dramatically visualize customer directed convergence without revolutionary ROI. Completely synergize premier niche markets.'
+}, {
+    class: 'fa-brands fa-galactic-senate',
+    heading: 'happiness to health',
+    paragraph: 'Seamlessly visualize quality intellectual capital without collaboration and idea-sharing. Holistically pontificate installed base after products.'
+}, {
+    class: 'fa-solid fa-bullseye',
+    heading: 'balance to life',
+    paragraph: 'Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate for state of the art customer service.'
+}]
+
+document.addEventListener("DOMContentLoaded", function () {
+    let expertizeColumn = document.getElementById('expertize-columns-container');
+
+    if (!expertizeColumn) {
+        console.error("Error: #expertize-columns-container not found in the DOM.");
+        return;
+    }
+
+    // let expertizeColumn = document.getElementById('expertize-columns-container')
+    expertizeList.forEach(expert => {
+        console.log('scriptFile')
+        let expertize = document.createElement('div')
+        expertize.classList.add('expertize')
+
+        let expertIcon = document.createElement('i')
+        expertIcon.className = expert.class
+
+        let expertHeading = document.createElement('h1')
+        expertHeading.classList.add('expertHeading')
+        expertHeading.textContent = expert.heading
+
+        let expertParagraph = document.createElement('p')
+        expertParagraph.classList.add('expertParagraph')
+        expertParagraph.textContent = expert.paragraph
+
+        expertize.append(expertIcon, expertHeading, expertParagraph)
+        expertizeColumn.append(expertize)
+    })
+})
