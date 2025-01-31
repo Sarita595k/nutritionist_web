@@ -96,15 +96,27 @@
 }
 
 #experience-section-container {
+    padding: 5% 0;
     display: flex;
+    gap: 2%;
     color: white;
 }
 
 #experienceDetails {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experienceHeading {
+    width: 80%;
 }
 
 .experienceHeading h1 {
     font-size: 3.7rem;
     text-transform: capitalize;
+}
+
+#contactUsDetails {
+    background-color: rgba(255, 255, 255, 0.7);
 }
