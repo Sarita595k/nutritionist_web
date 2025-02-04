@@ -103,20 +103,103 @@
 }
 
 #experienceDetails {
+    margin-left: 5%;
+    width: 56%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.experienceHeading {
-    width: 80%;
+.experienceHeading h1 {
+    font-size: 5.7rem;
+    text-transform: capitalize;
+    font-weight: 400;
 }
 
-.experienceHeading h1 {
-    font-size: 3.7rem;
-    text-transform: capitalize;
+.experienceHeading span {
+    color: #D8C149;
+}
+
+.experienceHeading p {
+    font-size: 2rem;
 }
 
 #contactUsDetails {
-    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 25%;
+    right: 3%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* contact us detail section started here  */
+.details {
+    padding: 2rem;
+}
+
+.details h4 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #484743;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: lowercase;
+    margin: 1rem 0;
+}
+
+.details h4::first-letter,
+.details h1::first-letter {
+    text-transform: uppercase;
+}
+
+.details h1 {
+    font-size: 3rem;
+    color: #7E7B73;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.detailsPara {
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+    color: #484743;
+    padding-bottom: 3%;
+}
+
+.detailsSub {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailsSub h2 {
+    color: #7E7B73;
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: capitalize;
+    align-items: center;
+    margin: 2%;
+}
+
+.detailsSub p {
+    margin: 0 0 8% 14%;
+    color: #484743;
+    font-size: 1.2rem;
+}
+
+.part1 h2::before {
+    content: '\f02c';
+    font-family: 'fontAwesome';
+    padding: 0 2%;
+    font-size: 2.3rem;
+    color: #D8C149;
+    align-items: center;
+}
+
+.part2 h2::before {
+    content: '\f2b5';
+    font-family: 'fontAwesome';
+    padding: 0 2%;
+    font-size: 2.3rem;
+    color: #D8C149;
 }
