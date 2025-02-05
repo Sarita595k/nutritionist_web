@@ -87,6 +87,7 @@
     background-image: url('./Images/servicePage/background_8.jpg');
     background-size: cover;
     position: relative;
+    height: 85vh;
 }
 
 #experience-section-container::before {
@@ -106,8 +107,8 @@
     margin-left: 5%;
     width: 56%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 }
 
 .experienceHeading h1 {
@@ -124,16 +125,18 @@
     font-size: 2rem;
 }
 
+
+
+/* contact us detail section started here  */
 #contactUsDetails {
     position: absolute;
-    width: 25%;
-    right: 3%;
+    width: 30%;
+    right: 5%;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* contact us detail section started here  */
 .details {
-    padding: 2rem;
+    padding: 5rem 3rem;
 }
 
 .details h4 {
@@ -161,7 +164,7 @@
 }
 
 .detailsPara {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: "Playfair Display", serif;
     color: #484743;
     padding-bottom: 3%;
@@ -184,16 +187,16 @@
 .detailsSub p {
     margin: 0 0 8% 14%;
     color: #484743;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .part1 h2::before {
     content: '\f02c';
     font-family: 'fontAwesome';
-    padding: 0 2%;
+    padding: 0 3%;
+    margin-top: -10%;
     font-size: 2.3rem;
     color: #D8C149;
-    align-items: center;
 }
 
 .part2 h2::before {
@@ -202,4 +205,182 @@
     padding: 0 2%;
     font-size: 2.3rem;
     color: #D8C149;
+}
+
+.learnMoreDetails {
+    width: 80%;
+    margin: 5% auto 0 9%;
+    padding: 1.2rem 3.2rem;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    color: white;
+    background-color: #D8C149;
+    transition: all .7s ease-in-out;
+}
+
+.learnMoreDetails::after {
+    content: '\f061';
+    font-family: 'fontAwesome';
+    margin-left: 5%;
+}
+
+.learnMoreDetails:hover {
+    background-color: white;
+    color: #D8C149;
+    border: 1px solid #D8C149;
+}
+
+/* service package styles begins here */
+#service-section {
+    background-image: url('./Images/servicePage/background_11.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#serviceSectionContainer {
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#servicePackageHeading h2 {
+    color: #484743;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+#servicePackageHeading h1 {
+    color: #7E7B73;
+    font-weight: 500;
+    font-size: 4.9rem;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#servicePackageContainer {
+    margin: 7% 0 0;
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+}
+
+#servicePackage {
+    border: 1px solid #7E7B73;
+    width: calc(33% - 3%);
+    display: flex;
+    flex-direction: column;
+}
+
+.servicePackageListHeading {
+    padding: 17% 0 0;
+    border-bottom: 1px solid #7E7B73;
+}
+
+.servicePackageListHeading h2 {
+    font-size: 3.4rem;
+    font-weight: 400;
+    color: #484743;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.servicePackageListHeading h1 {
+    font-size: 6.9rem;
+    color: #7E7B73;
+    margin: 0;
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+}
+
+.servicePackageListHeading h1 span {
+    font-size: 3rem;
+}
+
+.servicePackageListHeading h4 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: #484743;
+    font-weight: 200;
+}
+
+.servicePackageList {
+    font-size: 1.9rem;
+    color: #484743;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.servicePackageList ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #7E7B73; */
+}
+
+.servicePackageList ul li {
+    width: 100%;
+    /* margin: 0 0 0 -16%; */
+    text-align: center;
+    list-style-type: none;
+    padding: 1.2rem 0;
+    /* margin-left: -14%; */
+    border-bottom: 1px solid #7E7B73;
+}
+
+#servicePackageBtn {
+    margin-top: 7%;
+    display: flex;
+    gap: 3rem;
+}
+
+.aboutPackageBtn {
+    background-color: #D8C149;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.aboutPackageBtn:hover {
+    color: #D8C149;
+    background-color: transparent;
+    border: .1rem solid #D8C149;
+}
+
+.aboutPackageBtn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contactUsBtn {
+    background-color: transparent;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #7E7B73;
+    border: none;
+    border-radius: 2.5rem;
+    border: .1rem solid #7E7B73;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.contactUsBtn:hover {
+    color: #F0F0F0;
+    background-color: #7E7B73;
 }
