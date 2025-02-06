@@ -178,3 +178,72 @@ document.addEventListener("DOMContentLoaded", function () {
         expertizeColumn.append(expertize)
     })
 })
+
+
+
+// service page offers listing 
+const packages = [{
+    packageName: 'bronze',
+    packagePrice: '99.99',
+    packageType: 'basic package',
+    packageIncluded: ['2 nutrition stratergies', 'beginners kit', '-', '-']
+},
+{
+    packageName: 'gold',
+    packagePrice: '199.99',
+    packageType: 'advanced package',
+    packageIncluded: ['2 nutrition stratergies', 'beginners kit', '5 video calls', '-']
+}, {
+    packageName: 'silver',
+    packagePrice: '249.99',
+    packageType: 'standard package',
+    packageIncluded: ['2 nutrition stratergies', 'beginners kit', '5 video calls', '2 consulting meetings']
+}]
+let servicePackageContainer = document.getElementById('servicePackageContainer')
+packages.forEach(package => {
+    let servicePackage = document.createElement('div')
+    servicePackage.id = 'servicePackage'
+
+    let servicePackageListHeading = document.createElement('div')
+    servicePackageListHeading.classList.add('servicePackageListHeading')
+
+    let serviceHeading = document.createElement('h2')
+    serviceHeading.textContent = package.packageName
+
+
+    let serviceHeadingSpan = document.createElement('span')
+    serviceHeadingSpan.textContent = '$'
+    let servicePriceHeading = document.createElement('h1')
+    servicePriceHeading.textContent = package.packagePrice
+
+    let servicePackageType = document.createElement('h4')
+    servicePackageType.textContent = package.packageType
+
+    // list created 
+    const servicePackageList = document.createElement('div')
+    servicePackageList.classList.add('servicePackageList')
+
+    const serviceList = document.createElement('ul')
+    package.packageIncluded.forEach(packageList => {
+        let lists = document.createElement('li')
+        lists.textContent = packageList
+
+        serviceList.append(lists)
+    })
+
+    servicePackageList.append(serviceList)
+    // button created 
+    const getStarted = document.createElement('div')
+    getStarted.classList.add('getStarted')
+
+    const getStartedBtn = document.createElement('button')
+    getStartedBtn.classList.add('getStartedBtn')
+    getStartedBtn.textContent = 'get started'
+
+
+    servicePriceHeading.append(serviceHeadingSpan)
+    servicePackageListHeading.append(serviceHeading, servicePriceHeading, servicePackageType)
+    getStarted.append(getStartedBtn)
+    servicePackage.append(servicePackageListHeading, servicePackageList, getStarted)
+    servicePackageContainer.append(servicePackage)
+})

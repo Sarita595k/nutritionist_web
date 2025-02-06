@@ -281,7 +281,7 @@
 
 .servicePackageListHeading {
     padding: 17% 0 0;
-    border-bottom: 1px solid #7E7B73;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
 }
 
 .servicePackageListHeading h2 {
@@ -324,18 +324,57 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* border-bottom: 1px solid #7E7B73; */
+    align-items: stretch;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .servicePackageList ul li {
     width: 100%;
-    /* margin: 0 0 0 -16%; */
     text-align: center;
     list-style-type: none;
+    margin: 0;
     padding: 1.2rem 0;
-    /* margin-left: -14%; */
-    border-bottom: 1px solid #7E7B73;
+    border-bottom: 1px solid rgba(0, 0, 0, .15);
+}
+
+#servicePackageContainer>div:nth-child(2) {
+    background-color: #F0F0F0;
+    border: none;
+}
+
+#servicePackageContainer>div:nth-child(2) button {
+    background-color: #D8C149;
+    color: #F0F0F0;
+}
+
+#servicePackageContainer>div:nth-child(2) button:hover {
+    background-color: transparent;
+    border: 1px solid #D8C149;
+    color: #D8C149;
+}
+
+.getStarted {
+    padding: 3rem 0 5rem;
+}
+
+.getStartedBtn {
+    background-color: #00a651;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.getStartedBtn:hover {
+    background-color: transparent;
+    border: 1px solid #00a651;
+    color: #00a651;
 }
 
 #servicePackageBtn {
