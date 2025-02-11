@@ -136,6 +136,10 @@ body {
     margin: 0 1.2rem;
 }
 
+.disable-link {
+    pointer-events: none;
+}
+
 #image-container {
     display: flex;
     color: white;
