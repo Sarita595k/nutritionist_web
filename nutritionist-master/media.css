@@ -53,8 +53,7 @@
         width: 90%;
         height: 10vh;
         margin: 3% 0;
-        transform: translate(10%);
-
+        /* transform: translate(10%); */
     }
 
     #header:first-child {
