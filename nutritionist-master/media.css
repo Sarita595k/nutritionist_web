@@ -4,27 +4,55 @@
         font-size: 45%;
     }
 
-    .image-logo {
-        height: 10vh;
-        width: 100%;
+    /* 
+    #hero-section {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .menu-item {
+        display: none;
+    }
+
+    #menu-icons-header {
+        display: none;
     }
 
     #hero-heading {
-        margin-top: 3%;
+        margin-top: 2%;
+        padding-left: 9%;
     }
 
     #hero-heading p {
-        width: 100%;
+        width: 95%;
+        font-size: 2.7rem;
     }
 
     #main-heading {
         width: 100%;
-        font-size: 3.3rem;
     }
 
     #header-girl {
-        margin-top: -10.3%;
-        padding: 0 9rem;
+        display: none;
     }
 
+    .signature {
+        height: 20%;
+        margin-left: 0;
+    }
+
+    #sub-header-container {
+        flex-direction: column;
+        margin: translate(50%, -50%);
+    }
+
+    #header {
+        width: 100%;
+    }
+
+    #choose-program {
+        padding-top: 60%;
+    }
 }
