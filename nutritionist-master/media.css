@@ -4,6 +4,10 @@
         font-size: 55% !important;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     /* 
     #hero-section {
         display: flex;
@@ -61,7 +65,7 @@
     }
 
     #header:last-child {
-        margin-bottom: 9%;
+        margin-bottom: 19%;
     }
 
     #choose-program-container {
@@ -130,6 +134,10 @@
 
     #girls-image-container {
         display: none;
+    }
+
+    #emailAddress {
+        width: 50%;
     }
 
     #pumpkin-seed-container {
