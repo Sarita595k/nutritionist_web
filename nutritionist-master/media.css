@@ -44,14 +44,16 @@
 
     #sub-header-container {
         flex-direction: column;
-        margin: translate(50%, -50%);
+        margin-top: 3%;
+        align-items: center;
+        /* margin: translate(50%, -50%); */
     }
 
     #header {
-        width: 70%;
+        width: 90%;
         height: 10vh;
-        margin: 3%;
-        transform: translate(15%, 25%);
+        margin: 3% 0;
+        transform: translate(10%);
 
     }
 
