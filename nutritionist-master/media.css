@@ -1,7 +1,7 @@
 /* responsiveness started here  */
 @media (max-width: 576px) {
     html {
-        font-size: 45%;
+        font-size: 55%;
     }
 
     /* 
@@ -27,7 +27,6 @@
 
     #hero-heading p {
         width: 95%;
-        font-size: 2.7rem;
     }
 
     #main-heading {
@@ -49,10 +48,101 @@
     }
 
     #header {
-        width: 100%;
+        width: 90%;
+        height: 10vh;
+        margin: 3%;
+        transform: translate(15%, 25%);
+
+    }
+
+    #header:first-child {
+        margin-top: 9%;
     }
 
     #choose-program {
-        padding-top: 60%;
+        padding-top: 70%;
+    }
+
+    #choose-program-container,
+    #choose-feedback-container {
+        margin: 0 10%;
+    }
+
+    #program-subheading h5 {
+        font-size: 2rem;
+    }
+
+    #program-cards-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .cards i {
+        position: relative;
+        margin-top: -5%;
+    }
+
+    #blog-container {
+        flex-direction: column;
+    }
+
+    .blog-image {
+        height: 20%;
+    }
+
+    #blog-container p {
+        color: #484743;
+    }
+
+    .readMore {
+        width: 20%;
+    }
+
+    #dieting-part1 h1 {
+        width: 100%;
+    }
+
+    #dieting-part1 p {
+        width: 100%;
+    }
+
+    .dieting-sublist {
+        flex-direction: column;
+    }
+
+    .list-are {
+        width: 100%;
+    }
+
+    .part-2 {
+        margin-left: 0;
+    }
+
+    #girls-image-container {
+        display: none;
+    }
+
+    #pumpkin-seed-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pumpkin-image {
+        margin-left: 0;
+    }
+
+    .content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .content h1,
+    .content h2 {
+        width: 100%;
     }
 }

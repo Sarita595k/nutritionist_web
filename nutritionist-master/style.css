@@ -229,6 +229,7 @@ body {
 #header {
     display: flex;
     width: 25%;
+    height: 20vh;
     padding: 2.7rem;
     align-items: center;
     justify-content: center;
@@ -546,7 +547,7 @@ body {
 }
 
 .blog-image {
-    height: 20rem;
+    height: 40%;
     width: 100%;
 }
 
@@ -584,22 +585,22 @@ body {
 }
 
 .readMore {
-    width: 40%;
+    width: 42%;
     text-decoration: none;
     text-align: left;
     background-color: #D8C149;
     border: none;
-    border-radius: 15px;
-    padding: .7rem;
-}
-
-.readMore {
+    border-radius: 1rem;
+    padding: 1rem;
     font-size: 1rem;
-    padding-left: .7rem;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     cursor: pointer;
+}
+
+.readMore i {
+    padding-left: 1rem;
 }
 
 .readMore:hover {
