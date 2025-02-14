@@ -48,7 +48,7 @@
     }
 
     #header {
-        width: 90%;
+        width: 70%;
         height: 10vh;
         margin: 3%;
         transform: translate(15%, 25%);
@@ -144,5 +144,9 @@
     .content h1,
     .content h2 {
         width: 100%;
+    }
+
+    #footer-container {
+        flex-direction: column;
     }
 }
