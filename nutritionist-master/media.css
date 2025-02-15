@@ -5,7 +5,11 @@
     }
 
     body {
+        box-sizing: border-box;
         overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        /* max-width: 100%; */
     }
 
     /* 
@@ -51,11 +55,10 @@
         margin-top: 3%;
         justify-content: center;
         align-items: center;
-        /* margin: translate(50%, -50%); */
     }
 
     #header {
-        width: 100%;
+        width: 70%;
         height: 10vh;
         margin: 3% 0;
     }
@@ -136,6 +139,17 @@
         display: none;
     }
 
+    #form-container {
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #subscription-form {
+        text-align: center;
+        width: 80%;
+    }
+
     #emailAddress {
         width: 50%;
     }
@@ -144,10 +158,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        text-align: center;
     }
 
+    /* .pumpkin {
+        margin-left: 0;
+        width: 50%;
+        height: 50%;
+    } */
     .pumpkin-image {
         margin-left: 0;
+    }
+
+    .pumpkin {
+        margin-left: 0;
+        width: 50%;
+        height: 50%;
     }
 
     .content {
@@ -157,7 +184,8 @@
 
     .content h1,
     .content h2 {
-        width: 100%;
+        width: 90%;
+        margin: 2rem;
     }
 
     #footer-container {
