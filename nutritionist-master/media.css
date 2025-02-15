@@ -68,11 +68,12 @@
     }
 
     #header:last-child {
-        margin-bottom: 19%;
+        margin-bottom: 29%;
     }
 
     #choose-program-container {
-        padding-top: 70%;
+        position: relative;
+        padding-top: 110%;
     }
 
     #choose-program-container,
