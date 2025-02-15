@@ -265,6 +265,7 @@ body {
 
 /* choose program section  */
 #choose-program {
+    position: relative;
     padding-top: 15%;
     background-color: #f2efe6;
     color: #7E7B73;
