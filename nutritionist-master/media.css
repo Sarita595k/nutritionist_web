@@ -192,4 +192,62 @@
     #footer-container {
         flex-direction: column;
     }
+
+    /* about us page responsive begins here */
+    #about-us-content {
+        width: 75%;
+        margin: 3rem 2rem;
+    }
+
+    #coaching-support {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #coaching-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    #coaching-support-content {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    #coaching-heading {
+        width: 100%;
+        font-size: 4.2rem;
+    }
+
+    #coaching-btn {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #healthyLifePrinciple,
+    #team-cards-container,
+    #dedicated-team-cards-container,
+    #dieting-packages,
+    #coaching-cards,
+    #mission-cards {
+        flex-direction: column;
+    }
+
+    /* .dedicated-team-card{
+    display: flex;
+} */
+    #dieting-package-headings h1 {
+        width: 100%;
+    }
+
+    #dieting-package-headings h2 {
+        width: 90%;
+    }
+
+    #meet-us-grids {
+        flex-wrap: wrap;
+    }
+
 }
