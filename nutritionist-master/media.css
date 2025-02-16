@@ -259,7 +259,8 @@
     }
 
     .expertize {
-        width: calc(50% - 2%);
+        width: 90%;
+        margin: auto;
     }
 
     #experience-section-container {
