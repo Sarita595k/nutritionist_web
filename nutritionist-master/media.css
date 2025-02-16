@@ -250,4 +250,43 @@
         flex-wrap: wrap;
     }
 
+    /* service page design begins here  */
+    #expertize-columns-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expertize {
+        width: calc(50% - 2%);
+    }
+
+    #experience-section-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #experienceDetails {
+        width: 90%;
+        margin: auto;
+    }
+
+    #contactUsDetails {
+        position: relative;
+        width: 90%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #servicePackageContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #servicePackage {
+        width: 90%;
+    }
 }
