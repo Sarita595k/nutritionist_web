@@ -4,6 +4,20 @@
 // console.log(numberIs.style.textContent = 370)
 // numberIs.append(meetColNumbers)
 
+
+// sidebar for responsive webpage
+let selectSidebarBtn = document.getElementById('sidebarBtn')
+let crossSymbol = document.getElementById('cross-symbol')
+let selectSidebar = document.getElementById('sidebarContainer')
+selectSidebarBtn.addEventListener('click', () => {
+    selectSidebar.classList.toggle('active')
+
+
+    crossSymbol.addEventListener("click", () => {
+        selectSidebar.classList.remove('active')
+    })
+})
+
 // project page posts script begins here
 
 const projectArray = [{
