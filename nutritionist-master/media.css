@@ -12,6 +12,14 @@
         /* max-width: 100%; */
     }
 
+    #sidebarBtn i {
+        display: block;
+    }
+
+    #sidebarContainer {
+        display: block;
+    }
+
     /* 
     #hero-section {
         display: flex;

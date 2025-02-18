@@ -13,9 +13,16 @@ body {
     font-family: "Playfair Display", serif;
 }
 
+#sidebarBtn {
+    display: flex;
+    flex-direction: row;
+}
+
 #sidebarBtn i {
-    /* top: 0;
-    position: absolute; */
+    display: none;
+    /* top: 0;*/
+    /* position: absolute; */
+    color: #D8C149;
     font-size: 3rem;
     margin: 5% 2% 2% 5%;
     cursor: pointer;
@@ -35,7 +42,8 @@ body {
 }
 
 #sidebarContainer {
-    width: 50%;
+    display: none;
+    width: 90%;
     height: 100vh;
     top: 0;
     position: absolute;
@@ -66,13 +74,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 3%;
     list-style-type: none;
 }
 
-.menu-icon a i {
+.menu-icon-responsive a i {
     font-size: 2rem;
     color: #484743;
-    margin: 3rem auto;
+    margin: 3rem 1.2rem;
     transition: all .2s ease-in-out;
 }
 
