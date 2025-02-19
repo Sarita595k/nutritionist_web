@@ -12,13 +12,13 @@
         /* max-width: 100%; */
     }
 
-    #sidebarBtn i {
+    #sidebarBtn i,
+    #sidebarContainer,
+    #cross-symbol {
         display: block;
     }
 
-    #sidebarContainer {
-        display: block;
-    }
+
 
     /* 
     #hero-section {

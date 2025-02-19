@@ -35,7 +35,10 @@ body {
 }
 
 #cross-symbol {
-    /* margin-left: 90%; */
+    position: absolute;
+    display: none;
+    top: 10%;
+    margin-left: -20%;
     text-align: right;
     font-size: 3rem;
     cursor: pointer;
