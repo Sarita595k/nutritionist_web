@@ -316,4 +316,320 @@
     }
 }
 
-:-moz-user-disabled
+/* responsiveness started here  */
+@media (max-width: 776px) {
+    html {
+        font-size: 55% !important;
+    }
+
+    body {
+        box-sizing: border-box;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        /* max-width: 100%; */
+    }
+
+    #sidebarBtn i,
+    #sidebarContainer,
+    #cross-symbol {
+        display: block;
+    }
+
+
+
+    /* 
+    #hero-section {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .menu-item {
+        display: none;
+    }
+
+    #menu-icons-header {
+        display: none;
+    }
+
+    #hero-heading {
+        margin-top: 2%;
+        padding-left: 9%;
+    }
+
+    #hero-heading p {
+        width: 95%;
+    }
+
+    #main-heading {
+        width: 100%;
+    }
+
+    #header-girl {
+        display: none;
+    }
+
+    .signature {
+        height: 20%;
+        margin-left: 0;
+    }
+
+    #sub-header-container {
+        position: relative;
+        flex-direction: column;
+        margin-top: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #header {
+        width: 70%;
+        height: 10vh;
+        margin: 3% 0;
+    }
+
+    #header:first-child {
+        margin-top: 9%;
+    }
+
+    #header:last-child {
+        margin-bottom: 29%;
+    }
+
+    #choose-program-container {
+        position: relative;
+        padding-top: 30%;
+    }
+
+    #choose-program-container,
+    #choose-feedback-container {
+        margin: 0 10%;
+    }
+
+    #program-subheading h5 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #program-cards-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 80%;
+        margin: 2%;
+    }
+
+    .cards i {
+        position: relative;
+        margin-top: -5%;
+    }
+
+    #blog-container {
+        flex-direction: column;
+    }
+
+    .blog-image {
+        height: 20%;
+    }
+
+    #blog-container p {
+        color: #484743;
+    }
+
+    .readMore {
+        width: 20%;
+    }
+
+    #dieting-part1 h1 {
+        width: 100%;
+    }
+
+    #dieting-part1 p {
+        width: 100%;
+    }
+
+    .dieting-sublist {
+        flex-direction: column;
+    }
+
+    .list-are {
+        width: 100%;
+    }
+
+    .part-2 {
+        margin-left: 0;
+    }
+
+    #girls-image-container {
+        display: none;
+    }
+
+    #form-container {
+        width: 90%;
+        padding: 5%;
+        text-align: center;
+    }
+
+    #subscription-form {
+        text-align: center;
+        width: 80%;
+    }
+
+    #emailAddress {
+        width: 50%;
+    }
+
+    #pumpkin-seed-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* .pumpkin {
+        margin-left: 0;
+        width: 50%;
+        height: 50%;
+    } */
+    .pumpkin-image {
+        margin-left: 0;
+    }
+
+    .pumpkin {
+        margin-left: 0;
+        width: 50%;
+        height: 50%;
+    }
+
+    .content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .content h1,
+    .content h2 {
+        width: 90%;
+        margin: 2rem;
+    }
+
+    #footer-container {
+        flex-direction: column;
+    }
+
+    /* about us page responsive begins here */
+    #about-us-content {
+        width: 75%;
+        margin: 3rem 2rem;
+    }
+
+    #coaching-support {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #coaching-image {
+        height: 100%;
+        width: 100%;
+    }
+
+    #coaching-support-content {
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+
+    #coaching-heading {
+        width: 100%;
+        font-size: 4.2rem;
+    }
+
+    #coaching-btn {
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+
+    #healthyLifePrinciple,
+    #team-cards-container,
+    #dedicated-team-cards-container,
+    #dieting-packages,
+    #coaching-cards,
+    #mission-cards {
+        flex-direction: column;
+    }
+
+    /* .dedicated-team-card{
+    display: flex;
+} */
+    #dieting-package-headings h1 {
+        width: 100%;
+    }
+
+    #dieting-package-headings h2 {
+        width: 90%;
+    }
+
+    #meet-us-grids {
+        flex-wrap: wrap;
+    }
+
+    /* service page design begins here  */
+    #expertize-columns-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .expertize {
+        width: 90%;
+        margin: auto;
+    }
+
+    #experience-section-container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    #experienceDetails {
+        width: 90%;
+        margin: auto;
+    }
+
+    #contactUsDetails {
+        position: relative;
+        width: 90%;
+        right: 0;
+        margin: auto;
+        text-align: center;
+    }
+
+    #servicePackageContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #servicePackage {
+        width: 90%;
+    }
+
+    #project-content {
+        width: 90%;
+        margin: 1rem 3rem;
+    }
+
+    #project-grids {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project-grid {
+        width: 90%;
+    }
+}
