@@ -529,13 +529,17 @@ body {
     border-radius: 50%;
 }
 
-#feedback-subheader {
+.feedback-subheader {
     margin-top: 5rem;
     padding: 5rem 0 10rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.active {
+    visibility: visible;
 }
 
 .name p {

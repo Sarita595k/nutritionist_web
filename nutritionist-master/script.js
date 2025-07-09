@@ -18,6 +18,12 @@ selectSidebarBtn.addEventListener('click', () => {
     })
 })
 
+// home page feedback section begins here 
+// let containerIs = document.getElementById('feedback-section')
+// let activeClass = document.createElement('div')
+// activeClass.classList.add('active')
+// containerIs.append(activeClass)
+
 // project page posts script begins here
 
 const projectArray = [{
