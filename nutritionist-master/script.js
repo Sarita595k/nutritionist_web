@@ -5,6 +5,14 @@
 // numberIs.append(meetColNumbers)
 
 
+
+
+// fetch("navbar.html")
+//     .then(response => response.text())
+//     .then(data => {
+//         document.getElementById("navigation-menu").innerHTML = data;
+//     });
+
 // sidebar for responsive webpage
 let selectSidebarBtn = document.getElementById('sidebarBtn')
 let crossSymbol = document.getElementById('cross-symbol')
