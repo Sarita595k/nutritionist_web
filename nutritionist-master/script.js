@@ -88,7 +88,7 @@ const projectArray = [{
     projectLink: "#",
     projectParagraph: "Catsear cauliflower garbanzo yarrow salsify chicory garlic bell pepper napa cabbage lettuce...",
 }, {
-    id: 10,
+    id: 11,
     imageSrc: 'https://organic-food.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/07/portfolio_10-640x480.jpg',
     projectHeading: 'stockholm snapshots',
     projectLink: "#",
