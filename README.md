@@ -6,7 +6,7 @@ This project focuses on a clean UI, smooth interaction, and SEO-friendly structu
 ---
 
 ## 📌 Live Demo  
-🔗 (https://organic-nutritionist.netlify.app/)
+🔗 https://organic-nutritionist.netlify.app/
 
 ---
 
