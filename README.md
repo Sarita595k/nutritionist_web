@@ -6,7 +6,7 @@ This project focuses on a clean UI, smooth interaction, and SEO-friendly structu
 ---
 
 ## 📌 Live Demo  
-🔗 **https://sarita595k.github.io/nutritionist_web/nutritionist-master/**
+🔗 (https://organic-nutritionist.netlify.app/)
 
 ---
 
