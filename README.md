@@ -14,12 +14,9 @@ This project focuses on a clean UI, smooth interaction, and SEO-friendly structu
 1. About the Project  
 2. Features  
 3. Technologies Used  
-4. Folder Structure  
-5. How to Use  
-6. Screenshots  
-7. Future Enhancements  
-8. Author  
-9. License  
+4. How to Use  
+5. Future Enhancements  
+6. Author  
 
 ---
 
@@ -30,7 +27,6 @@ This Nutritionist Website is a static, professionally designed wellness template
 - Home  
 - About  
 - Services  
-- BMI Calculator  
 - Plans  
 - Blog  
 - Testimonials  
@@ -48,9 +44,7 @@ It aims to give a clean, modern, and health-focused experience to users looking 
 - ✔️ Service showcase  
 - ✔️ Wellness plans section  
 - ✔️ Testimonials  
-- ✔️ BMI Calculator  
-- ✔️ Blog section  
-- ✔️ Contact form layout  
+- ✔️ Blog section   
 - ✔️ Lightweight & fast loading  
 
 ---
@@ -66,5 +60,4 @@ It aims to give a clean, modern, and health-focused experience to users looking 
 
 ---
 
-## 📁 4. Folder Structure
 
